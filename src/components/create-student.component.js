@@ -11,7 +11,7 @@ export default class CreateStudent extends Component {
         super(props);
         this.onChangeStudentName = this.onChangeStudentName.bind(this);
         this.onChangeStudentEmail = this.onChangeStudentEmail.bind(this);
-        this.onChangeStudentRollno = this.onChangeStudentRoll.bind(this);
+        this.onChangeStudentRollno = this.onChangeStudentRollno.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
@@ -76,7 +76,7 @@ export default class CreateStudent extends Component {
                         size="lg"
                         block="block"
                         type="submit"
-                        ClassName="mt-4"
+                        className="mt-4"
                     >
                         Crear estudiante
                     </Button>
