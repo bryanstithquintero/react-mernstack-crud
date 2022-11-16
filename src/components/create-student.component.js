@@ -43,13 +43,15 @@ export default class CreateStudent extends Component {
             .post("http://localhost:4000/students/create-student", studentObject)//post porque se va crear un objeto endpoint y objeto
             .then((res) => console.log(res.data)); //la respuesta (res) es mostrar el objeto si logra guardar el objeto
         this.setState({ name: "", email: "", rollno: "" });//se inicializa otra vez el objeto en vacio, al estado inicial los atributos
+
+        alert("Estudiante creado")
     }
 
 
     render() {
         return (
-            <div class="form-wrapper">
-                <Form onSubtmit={this.onSubmit}>
+            <div className="form-wrapper">
+                <Form onSubmit={this.onSubmit}>
                     <Form.Group controlId="Name">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control
